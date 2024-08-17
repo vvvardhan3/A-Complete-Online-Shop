@@ -1,5 +1,4 @@
-<%- include('../includes/head', {pageTitle: 'Singup'}) %>
-
+<%- include('../includes/head', { pageTitle: 'Signup' }) %>
 </head>
 <body>
     <%- include('../includes/header') %>
@@ -15,37 +14,40 @@
                 <input type="email" id="confirm-email" name="confirm-email" required>
             </p>
             <p>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" minlength="6" required>
+                <label for="Password">Password</label>
+                <input type="Password" id="Password" name="Password" minlength="6" required>
             </p>
 
-            <hr>
+            <hr> 
 
             <p>
                 <label for="fullname">Full Name</label>
-                <input type="name" id="fullname" name="fullname" required>
+                <input type="text" id="fullname" name="fullname" required>
             </p>
+
             <p>
                 <label for="street">Street</label>
                 <input type="text" id="street" name="street" required>
             </p>
+
             <p>
                 <label for="postal">Postal Code</label>
-                <input 
-                type="text" 
-                id="postal" 
-                name="postal" 
-                minlength="6" 
-                maxlength="6" 
-                required>
+                <input type="text" 
+                    id="postal" 
+                    name="postal" 
+                    minlength="6" 
+                    maxlength="6" 
+                    required>
             </p>
+
             <p>
                 <label for="city">City</label>
                 <input type="text" id="city" name="city" required>
             </p>
+
             <button class="btn">Create Account</button>
-            <p id="switch-form">
-                <a href="/login">Login instead</a>
+            <p>
+                <a id="switch-form" href="/login">Login instead</a>
             </p>
 
         </form>
